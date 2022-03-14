@@ -99,5 +99,10 @@ def delete_product(id):
   return product_schema.jsonify(product)
 
 
+@app.route("/")
+def index():
+    return "welcome to product api!"
+
+
 if __name__ == "__main__":
     app.run(debug=True)
